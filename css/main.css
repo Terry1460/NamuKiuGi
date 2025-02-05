@@ -1,0 +1,74 @@
+.main {
+	width: min(100%, 768px);
+	background-color: #282828;
+	padding: 1rem;
+	border-radius: 1rem;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	gap: 1rem;
+}
+
+.main .profile {
+	width: 100%;
+
+	& img {
+		width: 64px;
+		border: 1px solid gray;
+	}
+}
+
+.main .profile .menu {
+	float: right;
+	font-size: 2rem;
+}
+
+.main .info {
+	display: inline-block;
+}
+
+.main .tree {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	position: relative;
+
+	& img {
+		width: 70%;
+	}
+
+	&::after {
+		content: "!";
+		background-color: yellow;
+		color: white;
+		border-radius: 50%;
+		width: 2rem;
+		height: 2rem;
+		font-size: 2rem;
+		-webkit-text-stroke: 4px black;
+		paint-order: stroke fill;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		top: 0;
+	}
+}
+
+.main .buttons {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+
+	& a {
+		padding: 1rem 2rem;
+		border: 1px solid gray;
+		width: 20%;
+		text-align: center;
+	}
+}
